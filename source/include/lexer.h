@@ -2,9 +2,16 @@
 // Created by aowei on 25-6-29.
 //
 
-#ifndef LEXER_H
-#define LEXER_H
+#ifndef TAC_LEXER_H
+#define TAC_LEXER_H
 
+typedef struct LEXER_STRUCT
+{
+    char* source;
+    char c;
+    unsigned int index;
+} lexer_T;
 
+lexer_T* init_lexer(char* source);
 
-#endif //LEXER_H
+#endif //TAC_LEXER_H
